@@ -1,0 +1,7 @@
+h1: Josefin Sans, SemiBold 600
+h2: Jetbrains Mono, Regular 400
+content: Jetbrains Mono, ExtraLight 200
+buttons: Josefin Sans, Medium 500
+header:
+ logo: Josefin Sans, SemiBold 600
+ buttons: Josefin Sans, Light 300

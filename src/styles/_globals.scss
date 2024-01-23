@@ -1,0 +1,86 @@
+@use "./variables" as *;
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  // &:focus {
+  //   outline: none;
+  // }
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 62.5%;
+  // width: auto;
+  // overflow-x: hidden !important;
+}
+
+.text-header {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(3.2rem, 12vw, 5.6rem);
+  font-weight: 600;
+}
+
+.text-subheader {
+  font-family: "Jetbrains Mono", monospace;
+  color: $text-gray;
+  font-size: clamp(1.6rem, 7vw, 3.2rem);
+  font-weight: 400;
+}
+
+.text-content {
+  font-family: "Jetbrains Mono", monospace;
+  color: $text-gray;
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  font-weight: 200;
+}
+
+.filled-button {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Josefin Sans", monospace;
+  font-weight: 300;
+  background-color: black;
+  width: clamp(2rem, 30vw, 16rem);
+  height: clamp(2rem, 9vw, 8rem);
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50px;
+  gap: 0.5rem;
+  .button-icon {
+    font-size: clamp(1rem, 4vw, 1.6rem);
+  }
+  .button-text {
+    font-size: clamp(1rem, 4vw, 1.6rem);
+  }
+}
+
+.linkedin-button {
+  background-color: $linkedin-blue;
+}
+
+.container {
+  margin: 0 4rem;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.white-font {
+  color: $offwhite;
+}

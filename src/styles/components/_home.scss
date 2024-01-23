@@ -1,0 +1,94 @@
+@use "../variables" as *;
+
+.home {
+  z-index: 0;
+  background-color: $offwhite;
+  height: 95vh;
+  // overflow-y: auto;
+  .home-container {
+    z-index: 2;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+    }
+    .home-image-container {
+      .home-image {
+        width: 100%;
+        height: auto;
+        padding: 0 4rem;
+      }
+    }
+    .home-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // background-color: red;
+      margin: 0 2rem;
+      gap: 1.5rem;
+      .home-buttons-container {
+        display: flex;
+        gap: 2rem;
+        z-index: 2;
+      }
+      .text-content {
+        text-align: center;
+        margin: 0 4rem;
+      }
+    }
+    .bg-images-container {
+      // display: flex;
+      // flex-direction: row;
+      // position: fixed;
+      // bottom: 0;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      z-index: 0;
+      // background-color: red;
+      // height: 100vh;
+      // min-width: 100vw;
+      bottom: -5vh;
+      gap: 20vw;
+      > * {
+        // background-color: red;
+        width: clamp(20rem, 50vw, 30rem);
+        height: auto;
+        // position: fixed;
+        opacity: 0.075;
+      }
+      // .robot-img {
+      //   right: 28rem;
+      // }
+      // .robot-img {
+      //   position: fixed;
+      //   margin-left: auto;
+      //   margin-bottom: auto;
+      //   bottom: -10rem;
+      //   // margin-bottom: 10rem;
+      //   opacity: 0.075;
+      //   height: auto;
+      //   width: clamp(20rem, 50vw, 50rem);
+      // }
+      // .microchip-img {
+      //   position: fixed;
+      //   opacity: 0.075;
+      //   width: clamp(20rem, 50vw, 50rem);
+      //   bottom: -10rem;
+      //   // display: none;
+      //   // position: fixed;
+      //   // bottom: -5rem;
+      //   // right: -20rem;
+      // }
+    }
+  }
+}
