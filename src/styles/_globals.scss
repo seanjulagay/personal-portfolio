@@ -24,10 +24,15 @@ body {
   // overflow-x: hidden !important;
 }
 
+body {
+  background-color: $offwhite;
+}
+
 .text-header {
   font-family: "Josefin Sans", sans-serif;
   font-size: clamp(3.2rem, 12vw, 5.6rem);
   font-weight: 600;
+  text-align: center;
 }
 
 .text-subheader {
@@ -42,10 +47,43 @@ body {
   color: $text-gray;
   font-size: clamp(1rem, 5vw, 1.6rem);
   font-weight: 200;
+  text-align: justify;
 }
 
 .filled-button {
   text-decoration: none;
+  .button {
+    background-color: $offblack;
+  }
+  .linkedin-button {
+    background-color: $linkedin-blue;
+  }
+}
+
+.filled-button-inverted {
+  @extend .filled-button;
+  .button {
+    background-color: $offwhite;
+    color: $offblack;
+  }
+}
+
+.outlined-button {
+  text-decoration: none;
+  .button {
+    background-color: $offwhite;
+    outline: 1.5px solid $offblack;
+    color: $offblack;
+  }
+}
+
+.outlined-button-inverted {
+  @extend .outlined-button;
+  .button {
+    background-color: $offblack;
+    color: $offwhite;
+    outline: 1.5px solid $offwhite;
+  }
 }
 
 .button {
@@ -53,12 +91,11 @@ body {
   font-weight: 300;
   background-color: black;
   width: clamp(2rem, 30vw, 16rem);
-  height: clamp(2rem, 9vw, 8rem);
+  height: clamp(2rem, 9vw, 5rem);
   display: flex;
   color: white;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   border-radius: 50px;
   gap: 0.5rem;
   .button-icon {
@@ -69,11 +106,7 @@ body {
   }
 }
 
-.linkedin-button {
-  background-color: $linkedin-blue;
-}
-
-.container {
+.content-container {
   margin: 0 4rem;
   padding: 6rem 0;
   display: flex;

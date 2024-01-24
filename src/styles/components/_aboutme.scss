@@ -1,9 +1,30 @@
 @use "../variables" as *;
 
 .about-me {
-  height: 70vh;
+  position: relative;
+  z-index: 1;
+  height: fit-content;
   background-color: $offblack;
   .about-me-container {
-    
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      .about-me-tech-container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: clamp(1rem, 5vw, 3rem);
+        margin: 2rem;
+        align-self: center;
+        > * {
+          object-fit: contain;
+          height: clamp(1rem, 15vw, 10rem);
+          width: clamp(1rem, 15vw, 10rem);
+          // width: clamp(1rem, 15vw, 15rem);
+          // outline: 1px white solid;
+        }
+      }
+    }
   }
 }

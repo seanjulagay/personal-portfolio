@@ -11,7 +11,6 @@ export default function Home() {
       <div className="home-container">
         <div className="home-image-container">
           <img src={gradPic} alt="" className="home-image" />
-          <div className="home-image-background"></div>
         </div>
         <div className="home-text-container">
           <h2 className="text-subheader">Hi! I'm</h2>

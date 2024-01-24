@@ -1,0 +1,15 @@
+[
+  {
+    "name": "UI/UX Designer Portfolio",
+    "status": "In Development",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "React"
+    ],
+    "description": "A portfolio page currently being developed for a colleague. Uses React and features dynamically created cards for the gallery, and page sections that are loaded from a JSON dataset.",
+    "liveSite": "https://magenta-snickerdoodle-fd6482.netlify.app/",
+    "sourceCode": "https://github.com/seanjulagay/portfolio-janna",
+    "previewImg": "janna-portfolio.png"
+  }
+]

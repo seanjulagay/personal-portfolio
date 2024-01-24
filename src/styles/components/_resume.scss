@@ -1,0 +1,24 @@
+@use "../variables" as *;
+
+.resume {
+  position: relative;
+  z-index: 1;
+  height: fit-content;
+  background-color: $offblack;
+  width: 100vw;
+  .resume-container {
+    > * {
+      color: $offwhite;
+    }
+    .resume-image-container {
+      .resume-image {
+        width: 100%;
+      }
+    }
+    .resume-buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}
