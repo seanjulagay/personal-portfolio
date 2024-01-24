@@ -1,6 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import htmlLogo from "/images/aboutme/html-logo.png";
+import cssLogo from "/images/aboutme/css-logo.png";
+import jsLogo from "/images/aboutme/js-logo.png";
+import reactLogo from "/images/aboutme/react-logo.png";
+import tailwindLogo from "/images/aboutme/tailwind-logo.png";
+import csharpLogo from "/images/aboutme/csharp-logo.png";
+import javaLogo from "/images/aboutme/java-logo.png";
+import gitLogo from "/images/aboutme/git-logo.png";
+import unityLogo from "/images/aboutme/unity-logo.png";
+import figmaLogo from "/images/aboutme/figma-logo.png";
+import photoshopLogo from "/images/aboutme/photoshop-logo.png";
+import officeLogo from "/images/aboutme/office-logo.png";
 
 export default function AboutMe() {
+  const images = [
+    htmlLogo,
+    cssLogo,
+    jsLogo,
+    reactLogo,
+    tailwindLogo,
+    csharpLogo,
+    javaLogo,
+    gitLogo,
+    unityLogo,
+    figmaLogo,
+    photoshopLogo,
+    officeLogo,
+  ];
+
   return (
     <div className="about-me">
       <div className="about-me-container content-container">
@@ -17,66 +44,9 @@ export default function AboutMe() {
           I’ve worked with different software and languages over the course of
           my degree, here are some of them:
           <div className="about-me-tech-container">
-            <img
-              src="/images/aboutme/html-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/css-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/js-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/react-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/tailwind-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/csharp-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/java-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/git-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/unity-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/figma-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/photoshop-logo.png"
-              alt=""
-              className="tech-img"
-            />
-            <img
-              src="/images/aboutme/office-logo.png"
-              alt=""
-              className="tech-img"
-            />
+            {images.map((image, index) => (
+              <img key={index} src={image} alt="" className="tech-img" />
+            ))}
           </div>
         </span>
       </div>
