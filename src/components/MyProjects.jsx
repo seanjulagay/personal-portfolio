@@ -3,15 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import projects from "../data/projects.json";
+import jannaPortfolio from "/images/myprojects/janna-portfolio.png";
 
 export default function MyProjects() {
+  const previewImages = [jannaPortfolio];
+
   const mappedProject = projects.map((item, index) => (
     <div className="project-container" key={index}>
-      <img
-        src={`/images/myprojects/${item.previewImg}`}
-        alt=""
-        className="project-img"
-      />
+      <img src={previewImages[index]} alt="" className="project-img" />
       <h2 className="text-subheader">{item.name}</h2>
       <div className="project-details">
         <span className="text-content">

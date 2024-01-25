@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import resumeImage from "/images/resume/resume.png";
 
 export default function Resume() {
   return (
@@ -8,11 +9,7 @@ export default function Resume() {
       <div className="resume-container content-container">
         <h1 className="text-header">Resume</h1>
         <div className="resume-image-container">
-          <img
-            src="/images/resume/resume.png"
-            alt=""
-            className="resume-image"
-          />
+          <img src={resumeImage} alt="" className="resume-image" />
         </div>
         <span className="text-content">
           I’m currently looking for opportunities relevant to my skillset! If

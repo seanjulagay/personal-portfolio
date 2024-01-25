@@ -44,9 +44,11 @@ export default function AboutMe() {
           I’ve worked with different software and languages over the course of
           my degree, here are some of them:
           <div className="about-me-tech-container">
-            {images.map((image, index) => (
-              <img key={index} src={image} alt="" className="tech-img" />
-            ))}
+            {images.map((image, index) => {
+              return (
+                <img key={index} src={image} alt="" className="tech-img" />
+              );
+            })}
           </div>
         </span>
       </div>
