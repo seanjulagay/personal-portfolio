@@ -1,19 +1,24 @@
 @use "../variables" as *;
 
-.home {
+#home {
   background-color: $offwhite;
   height: fit-content;
-  max-height: 95vh;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   // overflow-y: auto;
   * {
     position: relative;
     z-index: 1;
   }
   .home-container {
-    min-height: 100vh;
+    // background-color: yellow;
+    min-height: 90vh;
     height: 100%;
     display: flex;
-    padding-bottom: 5rem;
+    // padding-bottom: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -28,6 +33,7 @@
         width: 100%;
         height: auto;
         padding: 0 4rem;
+        max-width: 50rem;
       }
     }
     .home-text-container {
@@ -60,5 +66,10 @@
         width: clamp(20rem, 15vw, 50rem);
       }
     }
+  }
+  .home-arrow-down {
+    color: $offblack;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }

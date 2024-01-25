@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import htmlLogo from "/images/aboutme/html-logo.png";
 import cssLogo from "/images/aboutme/css-logo.png";
 import jsLogo from "/images/aboutme/js-logo.png";
@@ -12,7 +12,7 @@ import figmaLogo from "/images/aboutme/figma-logo.png";
 import photoshopLogo from "/images/aboutme/photoshop-logo.png";
 import officeLogo from "/images/aboutme/office-logo.png";
 
-export default function AboutMe() {
+export default function AboutMe({ callback }) {
   const images = [
     htmlLogo,
     cssLogo,
@@ -28,8 +28,37 @@ export default function AboutMe() {
     officeLogo,
   ];
 
+  const myRef = useRef();
+  const [yPos, setYPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (myRef.current != null) {
+        const offsetTop = myRef.current.offsetTop;
+        setYPos(offsetTop);
+        callback(offsetTop);
+      }
+    };
+
+    const handleResize = () => {
+      handleScroll();
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    // console.log("About me is in ", yPos);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [yPos]);
+
+  console.log("About me is in " + yPos);
+
   return (
-    <div className="about-me">
+    <div id="about-me" ref={myRef}>
       <div className="about-me-container content-container">
         <h1 className="text-header white-font">About Me</h1>
         <span className="text-content white-font">

@@ -45,7 +45,7 @@ export default function MyProjects() {
   ));
 
   return (
-    <div className="my-projects">
+    <div id="my-projects">
       <div className="my-projects-container content-container">
         <h1 className="text-header">My Projects</h1>
         {mappedProject}

@@ -5,7 +5,7 @@ import resumeImage from "/images/resume/resume.png";
 
 export default function Resume() {
   return (
-    <div className="resume">
+    <div id="resume">
       <div className="resume-container content-container">
         <h1 className="text-header">Resume</h1>
         <div className="resume-image-container">
