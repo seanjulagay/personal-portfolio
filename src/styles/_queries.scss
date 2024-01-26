@@ -3,6 +3,7 @@ $medium: 768px;
 $large: 992px;
 $desktop: 1025px; // desktop breakpoint after ipad pro
 $xl: 1200px;
+$xxxl: 1600px;
 $landscape: 576px;
 
 @mixin sm {
@@ -31,6 +32,12 @@ $landscape: 576px;
 
 @mixin xl {
   @media (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin xxxl {
+  @media (min-width: $xxxl) {
     @content;
   }
 }
