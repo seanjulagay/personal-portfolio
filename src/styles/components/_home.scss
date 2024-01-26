@@ -75,7 +75,10 @@
       }
       .text-header {
         @include dt {
-          font-size: clamp(3.2rem, 20vw, 8rem);
+          font-size: clamp(3.2rem, 15vw, 6rem);
+        }
+        @include xxl {
+          font-size: clamp(3.2rem, 15vw, 8rem);
         }
       }
       .text-content {

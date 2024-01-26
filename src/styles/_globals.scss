@@ -147,6 +147,9 @@ body {
     margin: 0 $md-margin;
     padding-bottom: 15rem;
   }
+  @include xxl {
+    margin: 0 $dt-margin;
+  }
 }
 
 .white-font {
