@@ -1,24 +1,64 @@
 @use "../variables" as *;
+@use "../queries";
 
 #my-projects {
   position: relative;
   z-index: 1;
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    .project-img {
-      width: 100%;
-      height: auto;
-    }
-    .project-details {
+  display: flex;
+  flex-direction: column;
+  .my-projects-container {
+    .project-container {
       display: flex;
       flex-direction: column;
-    }
-    .project-buttons-container {
-      display: flex;
       justify-content: center;
+      align-items: center;
       gap: 2rem;
+      .project-img {
+        width: 100%;
+        height: auto;
+      }
+      .project-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .project-details {
+          display: flex;
+          flex-direction: column;
+        }
+        .project-buttons-container {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+        }
+      }
+      @include dt {
+        // background-color: red;
+        flex-direction: row;
+        gap: 5rem;
+        &.inverted {
+          flex-direction: row-reverse;
+        }
+        > * {
+          flex-grow: 1;
+          flex-basis: 0;
+        }
+        .project-img {
+          min-width: 20rem;
+          height: 100%;
+          object-fit: cover;
+        }
+        .project-text {
+          text-align: left;
+          .project-buttons-container {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+    @include dt {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
     }
   }
 }

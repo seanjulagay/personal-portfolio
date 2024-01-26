@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Huddle Landing Page with Alternating Feature Blocks",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS"
+    ],
+    "description": "A challenge I completed from frontendmentor.io. I used this challenge to become proficient at organizing SCSS and taking into consideration multiple device queries. Fully responsive.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://htmlpreview.github.io/?https://github.com/seanniekins/Huddle-landing-page-with-alternating-feature-blocks/blob/master/index.html",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/Huddle-landing-page-with-alternating-feature-blocks",
+    "previewImg": "huddle.png"
+  },
+  {
+    "name": "Four Card Feature Section",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS"
+    ],
+    "description": "Another frontendmentor.io challenge. One of the earlier challenges I used to learn clean CSS implementation. Fully repsonsive.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://htmlpreview.github.io/?https://github.com/seanniekins/Four-card-feature-section/blob/master/index.html",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/Four-card-feature-section",
+    "previewImg": "four-card.png"
+  },
+  {
+    "name": "AirBNB Experiences",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "React"
+    ],
+    "description": "A small project from when I was familiarizing myself with React through Scrimba's React course. Used for practicing dynamic components.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://seanj-airbnb-exp.netlify.app/",
+    "btnOutlineLabel": null,
+    "btnOutlineSrc": null,
+    "previewImg": "airbnb-exp.png"
+  },
+  {
+    "name": "About Me Page",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript"
+    ],
+    "description": "A small About Me page I made for one of my college classes. I didn't want to just make a graphic design piece, so I went to make a small page! Just to make sure I was still familiar with HTML/CSS/JS back then.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://seanjulagay.github.io/AboutMeDSA/",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/AboutMeDSA",
+    "previewImg": "about-me.png"
+  }
+]

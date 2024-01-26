@@ -1,24 +1,64 @@
 @use "../variables" as *;
+@use "../queries";
 
 #resume {
   position: relative;
   z-index: 1;
   height: fit-content;
   background-color: $offblack;
-  width: 100vw;
+  width: 100%;
   .resume-container {
-    > * {
+    .text-header {
       color: $offwhite;
     }
-    .resume-image-container {
-      .resume-image {
-        width: 100%;
-      }
-    }
-    .resume-buttons-container {
+    .resume-content-container {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
+      .resume-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .resume-image {
+          width: 100%;
+          max-width: 35rem;
+          @include xl {
+            max-width: 50rem;
+          }
+        }
+      }
+      .resume-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .text-content {
+          color: $offwhite;
+        }
+        .resume-buttons-container {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          @include dt {
+            justify-content: flex-start;
+          }
+        }
+      }
+
+      @include dt {
+        flex-direction: row-reverse;
+        align-items: center;
+        > * {
+          flex-grow: 1;
+          flex-basis: 0;
+        }
+        .resume-text-container {
+        }
+        // .resume-image-container {
+        //   justify-content: flex-end;
+        // }
+      }
     }
   }
 }

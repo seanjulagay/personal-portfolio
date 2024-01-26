@@ -1,17 +1,20 @@
 @use "../variables" as *;
+@use "../queries";
 
 #home {
   background-color: $offwhite;
   height: fit-content;
-  min-height: 95vh;
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   // overflow-y: auto;
   * {
     position: relative;
     z-index: 1;
+    // outline: 1px black solid;
   }
   .home-container {
     // background-color: yellow;
@@ -23,17 +26,39 @@
     align-items: center;
     justify-content: flex-start;
     gap: 4rem;
+    width: 100%;
     &::before,
     &::after {
       content: "";
       flex: 1;
+    }
+    .home-image-container,
+    .home-text-container {
+      @include dt {
+        flex-grow: 1;
+        width: 100rem;
+        // background-color: red;
+        // width: 100%;
+      }
     }
     .home-image-container {
       .home-image {
         width: 100%;
         height: auto;
         padding: 0 4rem;
-        max-width: 50rem;
+        max-width: 35rem;
+        @include lg {
+          max-width: 50rem;
+        }
+        @include dt {
+          padding: 0 2rem;
+          max-width: 60rem;
+        }
+      }
+      @include dt {
+        display: flex;
+        // justify-content: flex-end;
+        align-items: center;
       }
     }
     .home-text-container {
@@ -48,22 +73,86 @@
         display: flex;
         gap: 2rem;
       }
+      .text-header {
+        @include dt {
+          font-size: clamp(3.2rem, 20vw, 8rem);
+        }
+      }
       .text-content {
         text-align: center;
         margin: 0 4rem;
+        @include dt {
+          margin: 0;
+        }
+      }
+      @include sm {
+        margin: 0 $sm-margin;
+      }
+      @include md {
+        margin: 0 $md-margin;
+      }
+      @include lg {
+        margin: 0 $lg-margin;
+      }
+      @include dt {
+        // width: 100rem;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .text-subheader,
+        .text-header,
+        .text-content {
+          text-align: left;
+        }
+      }
+      @include xl {
+        margin: 0 12rem;
+        gap: 2rem;
       }
     }
-    .bg-images-container {
-      width: 120%;
-      display: flex;
+
+    @include dt {
+      // background-color: red;
+      flex-direction: row-reverse;
+      align-items: center;
       justify-content: space-between;
-      position: fixed;
-      z-index: 0;
-      bottom: -1rem;
-      opacity: 0.05;
+      padding: 0 10rem;
+    }
+  }
+  .bg-images-container {
+    // width: 120%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 0;
+    bottom: -1rem;
+    opacity: 0.05;
+    .robot-img {
+      left: -3rem;
+    }
+    .microchip-img {
+      right: -3rem;
+    }
+    > * {
+      height: auto;
+      width: clamp(15rem, 60vw, 40rem);
+    }
+    @include md {
+      width: 110%;
       > * {
-        height: auto;
-        width: clamp(20rem, 15vw, 50rem);
+        width: clamp(20rem, 45vw, 80rem);
+      }
+    }
+    @include lg {
+      > * {
+        width: clamp(20rem, 40vw, 80rem);
+      }
+    }
+    @include dt {
+      width: 100%;
+      // justify-content: center;
+      > * {
+        width: clamp(20rem, 20vw, 80rem);
       }
     }
   }

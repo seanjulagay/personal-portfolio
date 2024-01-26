@@ -56,10 +56,27 @@ export default function Navbar({ secondSectionPos }) {
               onClick={toggleOpen}
             />
             <ul className="menu-container">
-              <li className="menu-item">Home</li>
-              <li className="menu-item">About Me</li>
-              <li className="menu-item">My Projects</li>
-              <li className="menu-item">Resume</li>
+              <li className="menu-item" onClick={() => scrollToSection("home")}>
+                Home
+              </li>
+              <li
+                className="menu-item"
+                onClick={() => scrollToSection("about-me")}
+              >
+                About Me
+              </li>
+              <li
+                className="menu-item"
+                onClick={() => scrollToSection("my-projects")}
+              >
+                My Projects
+              </li>
+              <li
+                className="menu-item"
+                onClick={() => scrollToSection("resume")}
+              >
+                Resume
+              </li>
             </ul>
           </div>
         </div>

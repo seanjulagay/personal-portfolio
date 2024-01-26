@@ -53,10 +53,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="bg-images-container">
-          <img src={robot} alt="" className="robot-img" />
-          <img src={microchip} alt="" className="microchip-img" />
-        </div>
+      </div>
+      <div className="bg-images-container">
+        <img src={robot} alt="" className="robot-img" />
+        <img src={microchip} alt="" className="microchip-img" />
       </div>
       <FontAwesomeIcon icon={faCaretDown} className="home-arrow-down" />
     </div>

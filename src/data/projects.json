@@ -1,5 +1,20 @@
 [
   {
+    "name": "PokeDex App",
+    "status": "In Development",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "React"
+    ],
+    "description": "A PokeDex app I'm developing utilizing PokeAPI. I am using this project to better understand and become proficient at handling APIs. Currently barebones and will receive preview and updates soon.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": null,
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": null,
+    "previewImg": "janna-portfolio.png"
+  },
+  {
     "name": "UI/UX Designer Portfolio",
     "status": "In Development",
     "technologies": [
@@ -8,8 +23,127 @@
       "React"
     ],
     "description": "A portfolio page currently being developed for a colleague. Uses React and features dynamically created cards for the gallery, and page sections that are loaded from a JSON dataset.",
-    "liveSite": "https://magenta-snickerdoodle-fd6482.netlify.app/",
-    "sourceCode": "https://github.com/seanjulagay/portfolio-janna",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://magenta-snickerdoodle-fd6482.netlify.app/",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/portfolio-janna",
     "previewImg": "janna-portfolio.png"
+  },
+  {
+    "name": "Personal Portfolio",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "React"
+    ],
+    "description": "You're already here. Thanks for visiting! :)",
+    "btnFillLabel": null,
+    "btnFillSrc": null,
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/portfolio",
+    "previewImg": "portfolio.png"
+  },
+  {
+    "name": "Thesis Project: Uncovering the Deep",
+    "status": "Completed",
+    "technologies": [
+      "Unity Engine",
+      "C#",
+      "Figma",
+      "Git"
+    ],
+    "description": "A 2D Windows marine exploration game about Olive the Sea Otter and her adventures in the ocean. Showcases a variety of feature such as data persistence, achievement system, dialogue system, quiz system and many more. Also features several game modes such as story mode, endless mode, and an aquarium mode. Developed alongside my colleagues Julia Avesta and Cedrick Austria.",
+    "btnFillLabel": "Itch.io Page",
+    "btnFillSrc": "https://seanitos.itch.io/uncovering-the-deep",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/Uncovering-the-Deep",
+    "previewImg": "uncovering-the-deep.png"
+  },
+  {
+    "name": "Smile Solutions",
+    "status": "Completed",
+    "technologies": [
+      "Figma"
+    ],
+    "description": "Our team's entry for the 2022 DLSU-D Codelympics, in which my colleagues (Julia Avesta and Janna Arcullo) and I raced against the clock to come up with a website design with the provided categories. Facing against different teams, our work was chosen as the best for its completeness and cleanliness despite the time limit. Our team won as champions this year.",
+    "btnFillLabel": "Figma Preview",
+    "btnFillSrc": "https://www.figma.com/file/0G9POV0EJpS7LE9eejf5rT/Codelympics-2022%3A-Smile-Solutions-Da-Itos?type=design&node-id=0%3A1&mode=design&t=wp6w0yzY2UCmf4nw-1",
+    "btnOutlineLabel": null,
+    "btnOutlineSrc": null,
+    "previewImg": "smile-solutions.png"
+  },
+  {
+    "name": "Thesis Project: Lost in Space",
+    "status": "Completed",
+    "technologies": [
+      "Unity Engine",
+      "C#",
+      "Figma",
+      "Git"
+    ],
+    "description": "A 2D vertical scroller Windows game which utilizes physics concepts such as momentum, gravity, and velocity to aid and challenge the player. The playable character features a rabbit that has crashed on an unknown planet and has their supplies floating in zero gravity due to the collision impact. The goal of the player is to control the rabbit, float upwards using their jetpack, and stack the supplies accordingly, in order to repair the ship and escape the planet which is currently within the vicinity of a black hole. Features a story mode and endless mode. Developed alongside my colleagues Julia Avesta and Adriel Grafilo.",
+    "btnFillLabel": "Build Repo",
+    "btnFillSrc": "https://github.com/seanjulagay/Lost-in-Space-Build",
+    "btnOutlineLabel": null,
+    "btnOutlineSrc": null,
+    "previewImg": "smile-solutions.png"
+  },
+  {
+    "name": "Automata Compiler",
+    "status": "Completed",
+    "technologies": [
+      "Unity Engine",
+      "C#"
+    ],
+    "description": "A 2D compiler visualizer developed using the Unity Engine that accepts strings and checks if they are valid for the current given Deterministic Finite Automaton, Context-Free Grammar, and Pushdown Automata charts. Build executable and source code are available upon request.",
+    "btnFillLabel": null,
+    "btnFillSrc": null,
+    "btnOutlineLabel": null,
+    "btnOutlineSrc": null,
+    "previewImg": "automata-compiler.png"
+  },
+  {
+    "name": "Java Inventory - Apollo Music Shop",
+    "status": "Completed",
+    "technologies": [
+      "Java",
+      "JCreator"
+    ],
+    "description": "An inventory system developed using Java which features an login system with admin and employee modes, data persistence on available stocks, and receipt printing system.",
+    "btnFillLabel": null,
+    "btnFillSrc": null,
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/ApolloInventorySystem",
+    "previewImg": "automata-compiler.png"
+  },
+  {
+    "name": "Simple JavaScript Calculator",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript"
+    ],
+    "description": "A simple calculator for simple artihmetic computations. Developed using vanilla JS. Characters and calculations are parsed and tokenized manually without usage of built-in JS methods for logic practice.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://seanjulagay.github.io/SimpleCalculator/",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/SimpleCalculator",
+    "previewImg": "simple-calculator.png"
+  },
+  {
+    "name": "Spin and Munch",
+    "status": "Completed",
+    "technologies": [
+      "Unity Engine",
+      "C#"
+    ],
+    "description": "A game I developed for one of my high school subjects. Project requirements were lax, so I decided to take the digital and develop a game. This was my first time dipping my toes into the Unity Engine.",
+    "btnFillLabel": "Build Repo",
+    "btnFillSrc": "https://github.com/seanjulagay/SpinAndMunchGame",
+    "btnOutlineLabel": null,
+    "btnOutlineSrc": null,
+    "previewImg": "spin-and-munch.gif"
   }
 ]
