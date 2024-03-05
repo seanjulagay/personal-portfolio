@@ -18,10 +18,12 @@ import huddle from "/images/myprojects/miniprojects/huddle.png";
 import fourCard from "/images/myprojects/miniprojects/four-card.png";
 import airbnbExp from "/images/myprojects/miniprojects/airbnb-exp.png";
 import aboutMe from "/images/myprojects/miniprojects/about-me.png";
+import pokedex from "/images/myprojects/pokedex.png";
+import todo from "/images/myprojects/miniprojects/todo.png";
 
 export default function MyProjects({ callback }) {
   const previewImages = [
-    unavailable,
+    pokedex,
     jannaPortfolio,
     portfolio,
     uncoveringTheDeep,
@@ -33,7 +35,7 @@ export default function MyProjects({ callback }) {
     spinAndMunch,
   ];
 
-  const previewImagesMini = [huddle, fourCard, airbnbExp, aboutMe];
+  const previewImagesMini = [todo, huddle, fourCard, airbnbExp, aboutMe];
 
   const myRef = useRef();
 

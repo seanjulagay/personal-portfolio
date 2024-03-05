@@ -1,5 +1,21 @@
 [
   {
+    "name": "React Todo List",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "React",
+      "Figma"
+    ],
+    "description": "Small responsive todo app made with React. Can mark tasks as complete to temporarily hold them at the bottom with an option to delete to declutter.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://seans-todo.netlify.app/",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/react-todo",
+    "previewImg": "todo.png"
+  },
+  {
     "name": "Huddle Landing Page with Alternating Feature Blocks",
     "status": "Completed",
     "technologies": [
