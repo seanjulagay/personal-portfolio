@@ -120,21 +120,6 @@
     "previewImg": "automata-compiler.png"
   },
   {
-    "name": "Simple JavaScript Calculator",
-    "status": "Completed",
-    "technologies": [
-      "HTML",
-      "CSS/SCSS",
-      "JavaScript"
-    ],
-    "description": "A simple calculator for simple artihmetic computations. Developed using vanilla JS. Characters and calculations are parsed and tokenized manually without usage of built-in JS methods for logic practice.",
-    "btnFillLabel": "Live Site",
-    "btnFillSrc": "https://seanjulagay.github.io/SimpleCalculator/",
-    "btnOutlineLabel": "Repository",
-    "btnOutlineSrc": "https://github.com/seanjulagay/SimpleCalculator",
-    "previewImg": "simple-calculator.png"
-  },
-  {
     "name": "Spin and Munch",
     "status": "Completed",
     "technologies": [

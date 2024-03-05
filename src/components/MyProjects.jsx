@@ -16,7 +16,6 @@ import simpleCalculator from "/images/myprojects/simple-calculator.png";
 import spinAndMunch from "/images/myprojects/spin-and-munch.gif";
 import huddle from "/images/myprojects/miniprojects/huddle.png";
 import fourCard from "/images/myprojects/miniprojects/four-card.png";
-import airbnbExp from "/images/myprojects/miniprojects/airbnb-exp.png";
 import aboutMe from "/images/myprojects/miniprojects/about-me.png";
 import pokedex from "/images/myprojects/pokedex.png";
 import todo from "/images/myprojects/miniprojects/todo.png";
@@ -31,11 +30,10 @@ export default function MyProjects({ callback }) {
     lostInSpace,
     automataCompiler,
     apolloMusicShop,
-    simpleCalculator,
     spinAndMunch,
   ];
 
-  const previewImagesMini = [todo, huddle, fourCard, airbnbExp, aboutMe];
+  const previewImagesMini = [todo, simpleCalculator, huddle, fourCard, aboutMe];
 
   const myRef = useRef();
 

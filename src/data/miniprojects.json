@@ -16,6 +16,21 @@
     "previewImg": "todo.png"
   },
   {
+    "name": "Simple JavaScript Calculator",
+    "status": "Completed",
+    "technologies": [
+      "HTML",
+      "CSS/SCSS",
+      "JavaScript"
+    ],
+    "description": "A simple calculator for simple artihmetic computations. Developed using vanilla JS. Characters and calculations are parsed and tokenized manually without usage of built-in JS methods for logic practice.",
+    "btnFillLabel": "Live Site",
+    "btnFillSrc": "https://seanjulagay.github.io/SimpleCalculator/",
+    "btnOutlineLabel": "Repository",
+    "btnOutlineSrc": "https://github.com/seanjulagay/SimpleCalculator",
+    "previewImg": "simple-calculator.png"
+  },
+  {
     "name": "Huddle Landing Page with Alternating Feature Blocks",
     "status": "Completed",
     "technologies": [
@@ -44,21 +59,6 @@
     "previewImg": "four-card.png"
   },
   {
-    "name": "AirBNB Experiences",
-    "status": "Completed",
-    "technologies": [
-      "HTML",
-      "CSS/SCSS",
-      "React"
-    ],
-    "description": "A small project from when I was familiarizing myself with React through Scrimba's React course. Used for practicing dynamic components.",
-    "btnFillLabel": "Live Site",
-    "btnFillSrc": "https://seanj-airbnb-exp.netlify.app/",
-    "btnOutlineLabel": null,
-    "btnOutlineSrc": null,
-    "previewImg": "airbnb-exp.png"
-  },
-  {
     "name": "About Me Page",
     "status": "Completed",
     "technologies": [
@@ -66,7 +66,7 @@
       "CSS/SCSS",
       "JavaScript"
     ],
-    "description": "A small About Me page I made for one of my college classes. I didn't want to just make a graphic design piece, so I went to make a small page! Just to make sure I was still familiar with HTML/CSS/JS back then.",
+    "description": "A small About Me page I made on my first year of college. I didn't want to just make a graphic design piece, so I went to make a small page. Just to refamiliarize myself with basic frontend.",
     "btnFillLabel": "Live Site",
     "btnFillSrc": "https://seanjulagay.github.io/AboutMeDSA/",
     "btnOutlineLabel": "Repository",
