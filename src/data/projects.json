@@ -1,20 +1,22 @@
 [
   {
     "name": "PokeDex App",
-    "status": "In Development",
+    "status": "Completed",
     "technologies": [
       "Figma",
       "HTML",
       "CSS/SCSS",
+      "Javascript",
       "React",
-      "Rest API (Axios)"
+      "Rest API (Axios)",
+      "Content Delivery API (Contentful)"
     ],
-    "description": "A PokeDex app I'm developing utilizing PokeAPI. I'm using this project to become proficient at handling API calls and to master seamless CSS/SCSS presentation. Still working on adding more details and optimizing preloading for a smoother experience.",
+    "description": "An immersive Pokedex from the Pokemon franchise. Developed this project to improve my proficiency of SCSS, React hooks, API fetching, and Javascript.",
     "btnFillLabel": "Live Site",
     "btnFillSrc": "https://seans-pokedex.netlify.app/",
     "btnOutlineLabel": "Repository",
-    "btnOutlineSrc": null,
-    "previewImg": "pokedex.png"
+    "btnOutlineSrc": "https://github.com/seanjulagay/pokedex",
+    "previewImg": "pokedex.gif"
   },
   {
     "name": "UI/UX Designer Portfolio",

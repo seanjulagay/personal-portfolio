@@ -17,7 +17,7 @@ import spinAndMunch from "/images/myprojects/spin-and-munch.gif";
 import huddle from "/images/myprojects/miniprojects/huddle.png";
 import fourCard from "/images/myprojects/miniprojects/four-card.png";
 import aboutMe from "/images/myprojects/miniprojects/about-me.png";
-import pokedex from "/images/myprojects/pokedex.png";
+import pokedex from "/images/myprojects/pokedex.gif";
 import todo from "/images/myprojects/miniprojects/todo.png";
 
 export default function MyProjects({ callback }) {
